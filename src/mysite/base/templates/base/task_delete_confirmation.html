@@ -1,0 +1,10 @@
+
+<a href='/todo' > Volver </a>
+
+<form method='POST'>
+    
+    {% csrf_token %}
+    <p>Are you sure to delete, task {{ task.id }} ?</p>
+    <input type='submit' value='Delete' >
+
+</form>

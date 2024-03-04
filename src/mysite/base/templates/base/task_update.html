@@ -1,0 +1,11 @@
+<h1> New task form </h1>
+<a href='/todo' > Volver </a>
+<form method="POST" action="" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type='submit' value="Send" >
+</form> 
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
