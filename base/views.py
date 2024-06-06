@@ -10,14 +10,12 @@ from .models import Task
 # Create your views here.
 
 class CustomLogin(LoginView):
-    
     def get_success_url(self) -> str:
         return reverse_lazy('todo')
     
 class CustomLogout(LogoutView):
     def get_success_url(self) -> str:
         return reverse_lazy('login')
-
 
 class TodoList(LoginRequiredMixin, ListView):
     model = Task

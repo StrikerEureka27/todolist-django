@@ -13,7 +13,7 @@ virtualenv venv
 **Activate environment**
 
 ```
-source venv/bin/activate
+    source venv/bin/activate
 ```
 
 **Install Django pip dependency**
